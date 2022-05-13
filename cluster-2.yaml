@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: Folio-BD-EKS-2
+  region: eu-west-2
+
+nodeGroups:
+  - name: Folio-EKS-nodes-2
+    instanceType: t2.micro
+    desiredCapacity: 2
+    volumeSize: 10
